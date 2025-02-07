@@ -4,21 +4,16 @@
 class Task
 {
 private:
-    bool is_paused;
     bool is_running;
 
 public:
-    Task(); // Constructeur
-    // Mise en pause de la tâche
-    void pause();
-    // Reprise de la tâche
-    void resume();
+    Task();  // Constructeur
+    ~Task(); // Déstructeur
     // Démarrage de la tâche
     void start();
     // Arrêt de la tâche
     void stop();
     // Getters
-    bool isPaused();
     bool isRunning();
 };
 
